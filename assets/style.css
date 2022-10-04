@@ -9,7 +9,7 @@
 body{
     font-family:"Montserrat", sans-serif;
     background-color: black;
- 
+ overflow-x: hidden;
 }
 img{
     max-width: 100%;
@@ -23,6 +23,7 @@ header{
     top: 0;
     left: 0;
    z-index: 100;
+   background-color: black;
 }
 nav{
     display: flex;
@@ -82,6 +83,12 @@ border-radius: 2rem;
     display: block;
     margin-right: 30px;
 }
+.fa-sharp{
+    display: none;
+}
+.lupa{
+    display: none;
+}
 .nav-menu-visible{
     left: 0;
     font-size: 13px;
@@ -106,8 +113,6 @@ border-radius: 2rem;
     min-width: fit-content;
     padding: 1rem 3rem;
     margin: auto;
-    ;
-    
 }
 .soy{
     font-size: 1.5rem;
@@ -312,6 +317,13 @@ border-radius: 2rem;
 .port-img{
  margin: auto;
 }
+.contact-tittle{
+       color:#34b0be;
+    margin-top: 5rem;
+    font-size: 200%;
+    margin-bottom: 3rem;
+    text-align: center;
+}
 .contact-container{
    text-align: center;
    align-items: center;
@@ -363,11 +375,9 @@ border-radius: 2rem;
     }
    /*----------- 930px----------*/
    @media screen and (min-width: 930px) {
-    /*nav{
-        display: flex;
-        justify-content: space-between;
-        height: 90px;
-    }*/
+    nav{
+       max-width: 930px;
+    }
     .nav-menu{
         display: flex;
         justify-content: end;
@@ -387,6 +397,7 @@ border-radius: 2rem;
        line-height:40px;
        max-width: max-content;
        overflow-x: hidden;
+      
     }
     .home{
         color:lightskyblue;
@@ -402,9 +413,11 @@ border-radius: 2rem;
       transition: .5s;
       box-shadow:  4px 4px 7px #999;
     } 
-
     .nav-toogle{
-        display: none;
+     display: none;
+    }
+    .nav-menu-visible{
+       right: 100%;
     }
     .header-information{
         margin: 0;
@@ -466,9 +479,7 @@ border-radius: 2rem;
             margin-top: 2rem;
             font-size: 1.5rem;
         }
-        .icon-container{
-         
-        }
+       
         .back-icon{
             width: 60px;
             height: 60px;
@@ -518,10 +529,7 @@ border-radius: 2rem;
         }
         
         .img-container{
-          overflow-y: hidden;
-          overflow-x: hidden;
-          align-items: center;
-          margin: 0 20%;
+            margin: 4rem;
         }
         .logo-back{
             background-color: white;
@@ -543,6 +551,14 @@ border-radius: 2rem;
             text-align: center;
             padding-top: 2rem;
             font-size: 80%;
+        }
+        .skill-style{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            /* margin: 0; */
+            margin-right: 15rem;
         }
         .skill-tittle{
             color:#34b0be;
@@ -569,7 +585,7 @@ border-radius: 2rem;
                 border-radius: 15px;
                 height: 1rem;
                 margin: auto;
-                max-width: 320px;
+                min-width: 600px;
                 text-align: end;
                 
         }
@@ -605,28 +621,25 @@ border-radius: 2rem;
            
         }
         .port-back{
-            padding: .5rem;
-            min-width: 300px;
-            min-height: 300px;
-            margin-left: 0.5rem;
+            min-width: auto;
+            min-height: auto;
         }
         .port-img{
-         margin: auto;
+            max-width: 700px;
+            max-height: 600px;
         }
         .contact-container{
-           text-align: center;
-           align-items: center;
-           margin: auto;
-           max-width:260px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 700px;
          
         }
         .contact-back{
-            text-align: center;
-            background-color: white;
-           margin: 1rem;
-           padding: 0.5rem;
-           border-radius: 4%; 
-           height: 150px;
+            height: 200px;
+            width: 600px;
+        }
+        .contact-img{
+            width: 100px;
         }
         .♥{
             color:#34b0be;
