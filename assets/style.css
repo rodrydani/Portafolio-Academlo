@@ -362,24 +362,25 @@ border-radius: 2rem;
     }
    /*----------- 930px----------*/
    @media screen and (min-width: 930px) {
-    nav{
+    /*nav{
         display: flex;
         justify-content: space-between;
         height: 90px;
-    }
+    }*/
     .nav-menu{
         display: flex;
         justify-content: end;
        flex-direction:row;
        background-color: transparent;
-       position: initial;
+       position: absolute;
+       top: 10%;
        padding: 2rem 1.5rem;
        overflow:hidden; 
        align-items: end;
        margin-top: 1rem;
     }
     .nav-menu-item{
-        font-size: 11px;
+        font-size: 13px;
        padding:0 18px ;
         margin: 0 10px;
        line-height:40px;
@@ -416,8 +417,6 @@ border-radius: 2rem;
     .img-present{
         padding: 0 6rem;
         margin-top: 5rem;
-        margin-left: auto;
-        margin-right: 25%;
     }
     .image-present{
         display: none;
@@ -426,10 +425,18 @@ border-radius: 2rem;
         display:initial  ;
       
     }
+    .header-text{
+        position: absolute;
+        text-align: left;
+        padding-right: 70%;
+        margin-left: 20%;
+      
+    }
     .soy{
         margin:auto;
         font-size: 2rem;
         display: flex;
+        margin-bottom: 20px;
         }
         .line2{
             height: 3px;
@@ -456,23 +463,12 @@ border-radius: 2rem;
         
         .exp{
             margin-top: 2rem;
+            font-size: 1.5rem;
         }
         .icon-container{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            gap: 2rem;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+          
         }
         .back-icon{
-            align-items: center;
-            text-align: center;
-            background-color: white;
-            border-radius: 100%; 
-            max-width: fit-content;
-            padding: .5rem;
            
         } 
         .icon{
@@ -497,7 +493,7 @@ border-radius: 2rem;
         .text-contain{
             color: rgb(138, 132, 132);
             text-align: center;
-           max-width: 300px;
+           max-width: 70%;
            margin: auto;
         }
         .text-tittle{
@@ -508,6 +504,8 @@ border-radius: 2rem;
         }
         .text-description{
             margin-bottom: 5rem;
+            font-size: 1.5rem;
+            color: white;
         }
         
         .service{
@@ -519,17 +517,10 @@ border-radius: 2rem;
         }
         
         .img-container{
-            display: flex;
-            justify-content:space-between;
-            overflow-y: scroll;
-            overscroll-behavior-x: contain;
-            scroll-snap-type: x proximity;
-            align-items: center;
-            margin: auto;
-            gap: 2rem;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            margin-left: 1rem;
+          overflow-y: hidden;
+          overflow-x: hidden;
+          align-items: center;
+          margin: 0 20%;
         }
         .logo-back{
             background-color: white;
