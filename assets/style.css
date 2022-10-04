@@ -22,7 +22,6 @@ header{
     width: 100%;
     top: 0;
     left: 0;
-   /* float: right;*/
    z-index: 100;
 }
 nav{
@@ -430,7 +429,7 @@ border-radius: 2rem;
     .header-text{
         position: absolute;
         text-align: left;
-        padding-right: 70%;
+        padding-right: 75%;
         margin-left: 20%;
       
     }
@@ -468,15 +467,15 @@ border-radius: 2rem;
             font-size: 1.5rem;
         }
         .icon-container{
-          
+         
         }
         .back-icon{
-           
-        } 
+            width: 60px;
+            height: 60px;
+        }
         .icon{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            min-width: 30px;
+            margin: 0.5rem;
         }
         .icon-containermax{
             max-width: 100%;
