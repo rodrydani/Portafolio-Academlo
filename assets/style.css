@@ -607,25 +607,34 @@ border-radius: 2rem;
             margin-bottom: 3rem;
             text-align: center;
         }
+        .port-style{
+            display: initial;
+        }
         .port-container{
-            display: flex;
-            justify-content: space-between;
-            overflow-y: scroll;
-            overscroll-behavior-x: contain;
-            scroll-snap-type: x proximity;
-            align-items: center;
-            margin: auto;
-            gap: 2rem;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-           
+            max-width: 80%;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 50% 50%;
+            grid-template-areas:
+            "a  b"
+            "c  d";  
         }
-        .port-back{
-            min-width: auto;
-            min-height: auto;
+        .img1{
+           grid-area: a;
         }
+        .img2{
+           grid-area: b;
+        }
+        .img3{
+            grid-area: c;
+        }
+        .img4{
+            grid-area: d;
+        }
+    
         .port-img{
-            max-width: 700px;
+            max-width: auto;
             max-height: 600px;
         }
         .contact-container{
