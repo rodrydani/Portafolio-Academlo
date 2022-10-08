@@ -53,6 +53,11 @@ nav{
     left: 100%;
     transition: left 0.5s;
 }
+.nav-menu.visible{
+    left: 0;
+    font-size: 13px;
+    transition: left 0.5s;
+}
 .nav-menu-item{
     font-size: 18px;
     margin: 0 10px;
@@ -89,10 +94,7 @@ border-radius: 2rem;
 .lupa{
     display: none;
 }
-.nav-menu-visible{
-    left: 0;
-    font-size: 13px;
-}
+
 .image-presentBig{
     display: none;
 }
@@ -378,6 +380,7 @@ border-radius: 2rem;
     nav{
        max-width: 930px;
     }
+    
     .nav-menu{
         display: flex;
         justify-content: end;
@@ -385,11 +388,14 @@ border-radius: 2rem;
        background-color: transparent;
        position: absolute;
        top: 10%;
+       left: 0;
+       right: 0;
        padding: 2rem 1.5rem;
        overflow:hidden; 
        align-items: end;
        margin-top: 1rem;
     }
+   
     .nav-menu-item{
         font-size: 13px;
        padding:0 18px ;
@@ -398,6 +404,9 @@ border-radius: 2rem;
        max-width: max-content;
        overflow-x: hidden;
       
+    }
+    .nav-toogle{
+       display: none;
     }
     .home{
         color:lightskyblue;
@@ -413,12 +422,7 @@ border-radius: 2rem;
       transition: .5s;
       box-shadow:  4px 4px 7px #999;
     } 
-    .nav-toogle{
-     display: none;
-    }
-    .nav-menu-visible{
-       right: 100%;
-    }
+  
     .header-information{
         margin: 0;
         display: flex;
